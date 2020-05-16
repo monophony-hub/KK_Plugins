@@ -17,7 +17,7 @@ namespace KK_Plugins
     {
         public const string GUID = "com.deathweasel.bepinex.pushup";
         public const string PluginName = "Pushup";
-        public const string PluginNameInternal = "KK_Pushup";
+        public const string PluginNameInternal = "EC_Pushup";
         public const string Version = "1.1.3.1";
         internal static new ManualLogSource Logger;
 
