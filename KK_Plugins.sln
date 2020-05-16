@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29509.3
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.539
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KK.CharaMakerLoadedSound", "src\CharaMakerLoadedSound.KK\KK.CharaMakerLoadedSound.csproj", "{6463C4B8-12CE-496B-8578-48D424F61400}"
 EndProject
@@ -227,6 +227,8 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Core.MaterialEditor.UI", "s
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Core.MaterialEditor.Maker", "src\MaterialEditor.Core.Maker\Core.MaterialEditor.Maker.shproj", "{A7C1CBF5-F2AC-44AC-9D2E-6954DAFC6BD8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EC.Pushup", "src\Pushup.KK\EC.Pushup.csproj", "{2FBBB20F-274A-44A2-BA7A-0372AFCF5C18}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		src\Shared\Shared.projitems*{002aa641-4dc8-4fef-83dd-a7fab3af6daf}*SharedItemsImports = 4
@@ -241,8 +243,18 @@ Global
 		src\UncensorSelector.Core.Studio\Core.UncensorSelector.Studio.projitems*{190fe08f-1d2e-4615-8555-f036d5e48587}*SharedItemsImports = 4
 		src\UncensorSelector.Core\Core.UncensorSelector.projitems*{190fe08f-1d2e-4615-8555-f036d5e48587}*SharedItemsImports = 4
 		src\StudioObjectMoveHotkeys.Core\Core.StudioObjectMoveHotkeys.projitems*{25352133-33b7-41e0-867a-d07c613ac3e9}*SharedItemsImports = 13
+		src\MaterialEditor.Core\Core.MaterialEditor.projitems*{25e45f23-4d1d-4cd0-b0bc-653c8ae1c561}*SharedItemsImports = 4
+		src\Shared.TextureContainer\Shared.TextureContainer.projitems*{25e45f23-4d1d-4cd0-b0bc-653c8ae1c561}*SharedItemsImports = 4
+		src\Shared\Shared.projitems*{25e45f23-4d1d-4cd0-b0bc-653c8ae1c561}*SharedItemsImports = 4
+		src\UIUtility\UIUtility.projitems*{25e45f23-4d1d-4cd0-b0bc-653c8ae1c561}*SharedItemsImports = 4
+		src\Shared\Shared.projitems*{2fbbb20f-274a-44a2-ba7a-0372afcf5c18}*SharedItemsImports = 4
 		src\InputHotkeyBlock.Core\Core.InputHotkeyBlock.projitems*{3557d31c-f7f1-4fc6-bb2f-4360cd50152a}*SharedItemsImports = 4
 		src\Shared\Shared.projitems*{3557d31c-f7f1-4fc6-bb2f-4360cd50152a}*SharedItemsImports = 4
+		src\MaterialEditor.Core.Studio\Core.MaterialEditor.Studio.projitems*{36247dab-4f43-4007-9856-03971a475d8f}*SharedItemsImports = 4
+		src\MaterialEditor.Core\Core.MaterialEditor.projitems*{36247dab-4f43-4007-9856-03971a475d8f}*SharedItemsImports = 4
+		src\Shared.TextureContainer\Shared.TextureContainer.projitems*{36247dab-4f43-4007-9856-03971a475d8f}*SharedItemsImports = 4
+		src\Shared\Shared.projitems*{36247dab-4f43-4007-9856-03971a475d8f}*SharedItemsImports = 4
+		src\UIUtility\UIUtility.projitems*{36247dab-4f43-4007-9856-03971a475d8f}*SharedItemsImports = 4
 		src\StudioSceneSettings.Core\Core.StudioSceneSettings.projitems*{3ae01cd8-4b89-4c17-8840-3153a4fa8ef7}*SharedItemsImports = 13
 		src\Colliders.Core\Core.Colliders.projitems*{3d3a1302-c529-4d07-97a4-02c23560a547}*SharedItemsImports = 4
 		src\Shared\Shared.projitems*{3d3a1302-c529-4d07-97a4-02c23560a547}*SharedItemsImports = 4
@@ -593,6 +605,10 @@ Global
 		{4B2A5873-42E3-446F-B986-6B57693928C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4B2A5873-42E3-446F-B986-6B57693928C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4B2A5873-42E3-446F-B986-6B57693928C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FBBB20F-274A-44A2-BA7A-0372AFCF5C18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FBBB20F-274A-44A2-BA7A-0372AFCF5C18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FBBB20F-274A-44A2-BA7A-0372AFCF5C18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FBBB20F-274A-44A2-BA7A-0372AFCF5C18}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -677,6 +693,7 @@ Global
 		{4E6812C6-5D1D-425B-9F58-629EF35004FD} = {877CDF4C-3018-40BD-BDBB-4B6039FB42CB}
 		{BD5E6EB1-54D9-4CD2-9CC6-878021F99424} = {2D958E84-D5C4-4F57-A430-BA0CB5F3DF13}
 		{A7C1CBF5-F2AC-44AC-9D2E-6954DAFC6BD8} = {2D958E84-D5C4-4F57-A430-BA0CB5F3DF13}
+		{2FBBB20F-274A-44A2-BA7A-0372AFCF5C18} = {521B03C0-E174-4217-8832-4CA34D0BAFE0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D0F79985-4CB7-46CB-BEC2-FF89C476ED20}

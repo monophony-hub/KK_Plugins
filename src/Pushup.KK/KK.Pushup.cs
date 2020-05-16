@@ -50,8 +50,10 @@ namespace KK_Plugins
             MakerAPI.ReloadCustomInterface += ReloadCustomInterface;
             MakerAPI.MakerExiting += MakerExiting;
             MakerAPI.MakerFinishedLoading += MakerFinishedLoading;
+#if KK
+            // No studio for EC
             RegisterStudioControls();
-
+#endif
             var harmony = HarmonyWrapper.PatchAll(typeof(Hooks));
 
             //Patch all the slider onValueChanged events to return false and cancel original code
@@ -72,6 +74,8 @@ namespace KK_Plugins
                     else
                         harmony.Patch(slider, new HarmonyMethod(typeof(Hooks).GetMethod(nameof(Hooks.SliderHook), AccessTools.all)));
                 }
+#if KK
+                // No steam version for EC
                 else if (Application.productName == Constants.MainGameProcessNameSteam)
                 {
                     if (slider.Name == "<Start>m__10") { }//areola size
@@ -79,6 +83,7 @@ namespace KK_Plugins
                     else
                         harmony.Patch(slider, new HarmonyMethod(typeof(Hooks).GetMethod(nameof(Hooks.SliderHook), AccessTools.all)));
                 }
+#endif
             }
         }
 
